@@ -15,7 +15,6 @@
     .wrap{width:100%; max-width:var(--maxw); margin:auto}
 
     /* Cover Intro */
-    /* Cover Intro */
 .intro {
   min-height: 100vh;
   display: flex;
@@ -23,21 +22,17 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 60px 30px;
-  background: url('images/cover-bg-2.jpg') no-repeat center center;
-  background-size: cover;   /* default: desktop */
-  background-color: #f7f5f0;
+  padding: 60px 40px; /* dilebarkan biar isi tidak mepet */
+  background: url('cover-bg-2.jpg') no-repeat center center;
+  background-size: cover; /* tetap full layar */
 }
 
-/* Mobile adjustment */
-@media (max-width: 768px) {
-  .intro {
-    background-size: contain;   /* tampil penuh tanpa terpotong */
-  }
-  .intro .content {
-    padding: 20px; /* beri ruang biar teks nggak mepet */
-  }
+.intro .content {
+  max-width: 800px;   /* batasi lebar konten biar rapi */
+  margin: 0 auto;
 }
+
+ 
 
     .intro h3{font-size:22px; color:var(--muted); margin:0;}
     .intro h1{font-family:'Playfair Display', serif; font-size:36px; margin:10px 0;}
@@ -102,6 +97,7 @@
 
   <!-- Intro -->
   <section class="intro">
+  <div class="content">
     <h1>You Are Invited To</h1>
     <h1>The Wedding Of</h1>
     <div class="photo"><img src="images/cover.png" alt="Narita & Syahrul"></div>
@@ -112,6 +108,7 @@
       “Dan Diantara Tanda-tanda (Kebesaran)-Nya Ialah Dia Menciptakan Pasangan-pasangan Untukmu Dari Jenismu Sendiri, Agar Kamu Cenderung Dan Merasa Tenteram Kepadanya, Dan Dia Menjadikan Diantaramu Rasa Kasih Dan Sayang. Sungguh, Pada Yang Demikian Itu Benar-benar Terdapat Tanda-tanda (Kebesaran Allah) Bagi Kaum Yang Berfikir”
       <footer>{ Q.S : Ar-Rum : 21 }</footer>
     </blockquote>
+    </div>
   </section>
 
   <!-- Details -->
