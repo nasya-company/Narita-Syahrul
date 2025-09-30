@@ -792,7 +792,6 @@ document.getElementById('submitGuest').addEventListener('click', ()=>{
   position: fixed;
   inset: 0;
   background: url('images/cover-bg-1.jpg') no-repeat center center;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -800,7 +799,10 @@ document.getElementById('submitGuest').addEventListener('click', ()=>{
   z-index: 10000;
   transition: opacity 1s ease, visibility 1s ease;
 }
-
+#coverOverlay.hide {
+  opacity: 0;
+  visibility: hidden;
+}
 .cover-photo img { width: 100%; height: 100%; object-fit: cover; }
 .cover-names {
   font-family: 'Great Vibes', cursive;
