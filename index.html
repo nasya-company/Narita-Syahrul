@@ -11,10 +11,15 @@
       --maxw:1000px;
     }
     *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial; background:linear-gradient(180deg,#faf9f7 0%, #f1efe9 100%); color:#222; margin:0; padding:0;}
+    body{
+      font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;
+      background: url('cover-bg-3.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color:#222; margin:0; padding:0;
+    }
     .wrap{width:100%; max-width:var(--maxw); margin:auto}
 
-     /* Cover Intro */
+    /* Cover Intro */
 .intro {
   min-height: 100vh;
   display: flex;
@@ -24,7 +29,7 @@
   text-align: center;
   padding: 60px 30px;
 
-  background: url('images/cover-bg-2.jpg') no-repeat center center;
+  background: url('cover-bg-2.jpg') no-repeat center center;
   background-size: contain;  /* Gambar selalu utuh */
   background-color: #f7f5f0; /* Warna latar belakang isi area kosong */
   background-position: center;
@@ -68,15 +73,14 @@ blockquote {
 }
 blockquote footer {margin-top:8px; font-size:14px; color:var(--muted);}
 
-
-      /* Details */
+    /* Details */
 .page {
   padding: 50px 20px;
   margin: 20px;
   border-radius: 14px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.06);
 
-  background: url('images/cover-bg-2.jpg') no-repeat center center;
+  background: url('cover-bg-2.jpg') no-repeat center center;
   background-size: contain;   /* supaya gambar utuh tidak kepotong */
   background-color: #f7f5f0;  /* warna isi ruang kosong */
   background-position: center;
@@ -117,14 +121,15 @@ blockquote footer {margin-top:8px; font-size:14px; color:var(--muted);}
     background-size: contain;  /* tetap rapi di HP */
   }
 }
-      /* location */
+
+    /* location */
 .map {
   height: 320px;
   border-radius: 12px;
   overflow: hidden;
   margin-top: 20px;
 
-  background: url('images/cover-bg-2.jpg') no-repeat center center;
+  background: url('cover-bg-2.jpg') no-repeat center center;
   background-size: contain;   /* gambar utuh */
   background-color: #f7f5f0;  /* isi ruang kosong */
   background-position: center;
@@ -145,7 +150,7 @@ blockquote footer {margin-top:8px; font-size:14px; color:var(--muted);}
   padding: 16px;
   border-radius: 10px;
 
-  background: #faf9f7 url('images/cover-bg-2.jpg') no-repeat center center;
+  background: #faf9f7 url('cover-bg-2.jpg') no-repeat center center;
   background-size: contain;   /* utuh */
   background-position: center;
   box-shadow: 0 6px 16px rgba(0,0,0,0.05);
@@ -170,8 +175,19 @@ blockquote footer {margin-top:8px; font-size:14px; color:var(--muted);}
   text-decoration: none;
   font-weight: 600;
 }
-    /* animations */
-    @keyframes fadeIn{0%{opacity:0; transform:scale(0.95)} 100%{opacity:1; transform:scale(1)}}
+
+/* animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.95) }
+  100% { opacity: 1; transform: scale(1) }
+}
+
+@media (max-width: 768px) {
+  .map,
+  .parents .card {
+    background-size: contain; /* tetap utuh di HP */
+  }
+}
 
     /* Custom photo crop */
     .round-photo{margin:20px auto; width:200px; height:200px; border-radius:50%; overflow:hidden; box-shadow:0 6px 20px rgba(0,0,0,0.15)}
@@ -193,11 +209,30 @@ blockquote footer {margin-top:8px; font-size:14px; color:var(--muted);}
       100% { transform: translateX(15px) translateY(100vh) rotate(360deg); opacity: 0; }
     }
 
-
+/* ===== Tambahan Responsif untuk HP kecil ===== */
+@media (max-width: 640px) {
+  .intro h1 { font-size: 24px; }
+  .intro .date { font-size: 14px; }
+  blockquote { font-size: 14px; padding: 0 10px; }
+  .page h2 { font-size: 20px; }
+  .names { font-size: 26px; }
+  .and-symbol { font-size: 28px; }
+  .round-photo { width: 140px; height: 140px; }
+  .event-info strong { font-size: 14px; }
+  .datetime { font-size: 13px; }
+  .rsvp h2 { font-size: 20px; }
+  .rsvp-btn { font-size: 14px; padding: 10px 18px; }
+  .form-row input, .form-row textarea { font-size: 14px; }
+  .stat .num { font-size: 16px; }
+}
   </style>
 </head>
 <body>
 <div class="wrap">
+  <!-- konten undangan kamu tetap sama seperti sebelumnya -->
+</div>
+</body>
+</html>
 
   <!-- Intro -->
   <section class="intro">
