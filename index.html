@@ -29,16 +29,16 @@
   text-align: center;
   padding: 60px 30px;
 
-  background: url('images/cover-bg-2.jpg') no-repeat center center;
-  background-size: contain;  /* Gambar selalu utuh */
-  background-color: #f7f5f0; /* Warna latar belakang isi area kosong */
-  background-position: center;
+  background: url('cover-bg-2.jpg') repeat-y top center;
+  background-size: cover;    /* penuh vertikal tanpa kosong */
+  background-color: #f7f5f0; /* warna dasar */
+  background-position: top center;
 }
 
 @media (max-width: 768px) {
   .intro {
     padding: 40px 20px;
-    background-size: contain; /* Tetap utuh di HP */
+    background-size: cover; /* tetap penuh di HP */
   }
   .intro .content { padding: 20px; }
 }
@@ -80,10 +80,10 @@ blockquote footer {margin-top:8px; font-size:14px; color:var(--muted);}
   border-radius: 14px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.06);
 
-  background: url('images/cover-bg-2.jpg') no-repeat center center;
-  background-size: contain;   /* supaya gambar utuh tidak kepotong */
+  background: url('cover-bg-2.jpg') repeat-y top center;
+  background-size: cover;   /* penuh vertikal */
   background-color: #f7f5f0;  /* warna isi ruang kosong */
-  background-position: center;
+  background-position: top center;
 }
 
 .page h2 {
@@ -118,7 +118,7 @@ blockquote footer {margin-top:8px; font-size:14px; color:var(--muted);}
 @media (max-width: 768px) {
   .page {
     padding: 30px 16px;
-    background-size: contain;  /* tetap rapi di HP */
+    background-size: cover;  /* tetap penuh di HP */
   }
 }
 
@@ -129,10 +129,10 @@ blockquote footer {margin-top:8px; font-size:14px; color:var(--muted);}
   overflow: hidden;
   margin-top: 20px;
 
-  background: url('images/cover-bg-2.jpg') no-repeat center center;
-  background-size: contain;   /* gambar utuh */
+  background: url('cover-bg-2.jpg') repeat-y top center;
+  background-size: cover;   /* penuh */
   background-color: #f7f5f0;  /* isi ruang kosong */
-  background-position: center;
+  background-position: top center;
   box-shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
 
@@ -150,9 +150,9 @@ blockquote footer {margin-top:8px; font-size:14px; color:var(--muted);}
   padding: 16px;
   border-radius: 10px;
 
-  background: #faf9f7 url('images/cover-bg-2.jpg') no-repeat center center;
-  background-size: contain;   /* utuh */
-  background-position: center;
+  background: #faf9f7 url('cover-bg-2.jpg') repeat-y top center;
+  background-size: cover;   /* penuh */
+  background-position: top center;
   box-shadow: 0 6px 16px rgba(0,0,0,0.05);
 }
 
@@ -185,7 +185,7 @@ blockquote footer {margin-top:8px; font-size:14px; color:var(--muted);}
 @media (max-width: 768px) {
   .map,
   .parents .card {
-    background-size: contain; /* tetap utuh di HP */
+    background-size: cover; /* penuh */
   }
 }
 
@@ -233,6 +233,7 @@ blockquote footer {margin-top:8px; font-size:14px; color:var(--muted);}
 </div>
 </body>
 </html>
+
 
   <!-- Intro -->
   <section class="intro">
