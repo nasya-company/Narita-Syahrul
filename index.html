@@ -15,6 +15,7 @@
     .wrap{width:100%; max-width:var(--maxw); margin:auto}
 
     /* Cover Intro */
+    /* Cover Intro */
 .intro {
   min-height: 100vh;
   display: flex;
@@ -22,16 +23,21 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 60px 40px; /* dilebarkan biar isi tidak mepet */
+  padding: 60px 30px;
   background: url('cover-bg-2.jpg') no-repeat center center;
-  background-size: cover; /* tetap full layar */
+  background-size: cover;   /* default: desktop */
+  background-color: #f7f5f0;
 }
 
-.intro .content {
-  max-width: 800px;   /* batasi lebar konten biar rapi */
-  margin: 0 auto;
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .intro {
+    background-size: contain;   /* tampil penuh tanpa terpotong */
+  }
+  .intro .content {
+    padding: 20px; /* beri ruang biar teks nggak mepet */
+  }
 }
-
  
 
     .intro h3{font-size:22px; color:var(--muted); margin:0;}
