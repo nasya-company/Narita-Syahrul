@@ -871,8 +871,8 @@ document.getElementById('submitGuest').addEventListener('click', ()=>{
   <span id="guestNameBox" style="display: none; margin-top:8px; padding: 6px 16px; border: 2px solid #d4af37; border-radius: 8px; font-weight: bold; font-size: 1.2rem; color: #d4af37; min-width: 200px; background: rgba(255,255,255,0.7);"></span> 
   <br><br>
   Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami. <br>
-  <small style="color: #888;">Mohon maaf apabila ada kesalahan penulisan nama/gelar</small>
-  <h3></h3><small style="color: #888;">note: Tidak menerima sumbangan.</small></h3>
+  <small style="color: #666;">Mohon maaf apabila ada kesalahan penulisan nama/gelar</small>
+  <h3></h3><small style="color: #666;">note: Tidak menerima sumbangan.</small></h3>
 </p>
 
 <script>
@@ -920,13 +920,6 @@ document.getElementById('submitGuest').addEventListener('click', ()=>{
   opacity: 0;
   visibility: hidden;
 }
-.cover-content { 
-  max-width: 480px; 
-  padding: 20px; 
-  animation: fadeInUp 1.2s ease forwards; 
-  background: rgba(255,255,255,0.4); /* opsional biar teks tetap jelas */
-  border-radius: 12px; 
-}
 .cover-photo {
   width: 200px; height: 200px;
   border-radius: 50%;
@@ -938,11 +931,10 @@ document.getElementById('submitGuest').addEventListener('click', ()=>{
 .cover-names {
   font-family: 'Great Vibes', cursive;
   font-size: 38px;
-  background: linear-gradient(90deg, #bfa14a, #f5e9d2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #bfa14a; /* warna emas polos */
   margin: 10px 0 20px;
 }
+
 .cover-text {
   font-size: 16px;
   color: #333;
